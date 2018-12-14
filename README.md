@@ -34,7 +34,7 @@ const item = {
 
 const name = undefsafe(item, 'name'); // name is inferred to string
 const firstChildAge = undefsafe(item, 'children', 0, 'age'); // firstChildAge is inferred to number
-const thirdChildAge = undefsafe(item, 'children', 0, 'age'); // thirdChildAge is inferred to number
+const thirdChildAge = undefsafe(item, 'children', 3, 'age'); // thirdChildAge is inferred to number
 const nestedB = undefsafe(item, 'someOtherNestedValue', 'a', 'b'); // is inferred to string
 ```
 
