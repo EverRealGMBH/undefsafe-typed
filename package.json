@@ -1,0 +1,73 @@
+{
+  "name": "undefsafe-typed",
+  "version": "1.0.0",
+  "description": "Library to safely get subproperties of objects in typescript. Inspired by undefsafe",
+  "author": "EverReal Gmbh <info@everreal.co>",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EverRealGMBH/undefsafe-typed.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EverRealGMBH/undefsafe-typed/issues"
+  },
+  "homepage": "https://github.com/EverRealGMBH/undefsafe-typed#README",
+  "scripts": {
+    "lint": "tslint './src/**/*.ts?(x)'",
+    "lint-fix": "tslint './src/**/*.ts?(x)' --fix",
+    "pretty-fix": "prettier './src/**/*.ts?(x)' --write",
+    "test": "jest",
+    "tsc": "tsc --declaration true",
+    "publish-package": "npm publish --access=public && rm -rf ./lib"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@everreal/tslint-config": "^1.0.0",
+    "@types/jest": "^23.3.0",
+    "husky": "^1.1.2",
+    "jest": "^23.4.1",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.8.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.3"
+  },
+  "jest": {
+    "rootDir": "./src",
+    "transform": {
+      ".*": "<rootDir>/../jest-preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*\\.(test|spec))\\.(ts|tsx|js)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "modulePaths": [
+      "./src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}

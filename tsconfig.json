@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib/",
+    "sourceMap": true,
+    "target": "ES5",
+    "module": "commonjs",
+    "jsx": "react",
+    "lib": ["es7", "es2017", "dom"],
+    "rootDir": "./src",
+    "declaration": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "pretty": true,
+    "noImplicitReturns": true
+  },
+  "typeRoots": ["./node_modules/@types", "./src/@types"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "awesomeTypescriptLoaderOptions": {}
+}

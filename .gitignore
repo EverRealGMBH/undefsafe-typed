@@ -1,0 +1,19 @@
+node_modules
+es
+lib
+coverage
+webpack-assets.json
+webpack-stats.json
+*.log
+*.orig
+.storybook/public
+.cache
+
+# Exclude IDE project folders
+.idea
+*.sublime-project
+*.sublime-workspace
+jsconfig.json
+
+# OS files
+.DS_STORE

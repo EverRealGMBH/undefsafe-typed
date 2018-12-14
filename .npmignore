@@ -1,0 +1,12 @@
+# root
+node_modules
+src
+.editorconfig
+.gitignore
+.gitlab-ci.yml
+.npmignore
+jest-preprocessor.js
+README.md
+tsconfig.json
+tslint.json
+yarn.lock

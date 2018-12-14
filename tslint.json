@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "@everreal/tslint-config/index",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "max-line-length": [true, 125]
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
