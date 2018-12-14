@@ -1,5 +1,7 @@
 # undefsafe-typed
 
+[![Build Status](https://travis-ci.org/EverRealGMBH/undefsafe-typed.svg?branch=master)](https://travis-ci.org/EverRealGMBH/undefsafe-typed)
+
 Library to safely get subproperties of objects in typescript, without crashing if any child is undefined along the object tree. Inspired by undefsafe.
 
 Fully supports types and inferres children types as return types.
