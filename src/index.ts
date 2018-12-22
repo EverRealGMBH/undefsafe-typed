@@ -1,3 +1,5 @@
+import * as undefsafeLib from 'undefsafe';
+
 export interface ITypedExtractor {
   <T, K1 extends keyof T>(object: T, key1: K1): T[K1];
   <T, K1 extends keyof T, K2 extends keyof T[K1]>(object: T, key1: K1, key2: K2): T[K1][K2];
@@ -136,5 +138,7 @@ export interface ITypedExtractor {
   ): T[K1][K2][K3][K4][K5][K6][K7][K8][K9][K10];
 }
 
-export const undefsafe: ITypedExtractor = <T = any>(object: T, ...keys: string[]) =>
-  object && keys.every((key) => (object = object[key]) !== undefined) ? object : undefined;
+export const undefsafe: ITypedExtractor = <T = any>(object: T, ...keys: string[]) => {
+  const keyString = (keys || []).join('.');
+  return undefsafeLib(object, keyString);
+};

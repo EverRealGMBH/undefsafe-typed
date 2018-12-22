@@ -41,6 +41,7 @@ describe('WHEN testing an a typed object', () => {
     smartIt(10, item, 'a1');
     smartIt(true, item, 'b1', 'c2', 0, 'a3');
     smartIt(null, item, 'b1', 'c2', 0, 'b3');
+    smartIt(undefined, item, 'b1', 'c2', 0, 'b3', 'notExisting1', 'notExisting2');
     smartIt(false, item, 'b1', 'c2', 1, 'a3');
     smartIt(null, item, 'b1', 'c2', 1, 'b3');
     smartIt(NaN, item, 'b1', 'c2', 1, 'c3');
