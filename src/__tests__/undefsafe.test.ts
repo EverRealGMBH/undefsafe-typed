@@ -49,4 +49,8 @@ describe('WHEN testing an a typed object', () => {
     smartIt(null, item, 'b1', 'c2', 2, 'b3');
     smartIt(10, item, 'b1', 'c2', 2, 'c3');
   });
+
+  it('SHOULD work for 20 params', () => {
+    expect(undefsafe(null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)).toBeUndefined();
+  });
 });
