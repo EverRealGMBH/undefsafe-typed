@@ -31,7 +31,9 @@
     }
   },
   "peerDependencies": {},
-  "dependencies": {},
+  "dependencies": {
+    "undefsafe": "^2.0.2"
+  },
   "devDependencies": {
     "@everreal/tslint-config": "^1.0.0",
     "@types/jest": "^23.3.0",
