@@ -1,6 +1,6 @@
 {
   "name": "undefsafe-typed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library to safely get subproperties of objects in typescript. Inspired by undefsafe",
   "author": "EverReal Gmbh <info@everreal.co>",
   "main": "lib/index.js",
